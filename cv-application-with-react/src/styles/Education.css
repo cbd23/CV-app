@@ -1,0 +1,40 @@
+.education {
+    margin: 20px 0;
+}
+
+.education-row-one {
+    font-size: 1.1rem;
+}
+
+.education-row-two,
+.education-row-three {
+    color: #737373;
+    font-size: 0.9rem;
+}
+
+.education-row-three {
+    font-weight: 700;
+}
+
+.education-row-one,
+.education-row-two,
+.education-row-three {
+    margin: 8px 0;
+}
+
+.school-name {
+    font-weight: 700;
+}
+
+.study-field-name {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.place {
+    font-weight: 700;
+}
+
+.project-description {
+    margin: 0;
+}

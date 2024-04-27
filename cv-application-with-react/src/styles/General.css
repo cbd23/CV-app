@@ -1,0 +1,48 @@
+.general-container {
+    border-radius: 4px;
+    margin: 4px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.general-lower {
+    display: flex;
+}
+
+.general-bio {
+    padding: 0 4px;
+    font-size: 0.9rem;
+    flex: 2;
+}
+
+.general-contact {
+    font-size: 0.9rem;
+    flex: 1;
+    padding: 0 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.general-name {
+    margin-bottom: 6px;
+}
+
+.general-position {
+    color: #1976d2;
+    margin-top: 0;
+}
+
+.general-city {
+    font-weight: 700;
+}
+
+.general-github-link,
+.general-linkedin-link {
+    width: fit-content;
+    font-weight: 700;
+    cursor: pointer;    
+    color: #076bcf;
+}

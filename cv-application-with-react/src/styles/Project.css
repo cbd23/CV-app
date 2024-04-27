@@ -1,0 +1,14 @@
+.project-container {
+    margin: 20px 0;
+}
+
+.project-name {    
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 8px 0;
+}
+
+.project-description {
+    color: #737373;
+    font-size: 0.9rem;
+}
