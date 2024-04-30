@@ -1,12 +1,16 @@
 import './../styles/EditGeneral.css'
 
-export function EditGeneral() {
+export function EditGeneral({ updateGeneralInfo }) {
+    const handleInputChange = (e) => {
+        const updatedInfo = { ...updateGeneralInfo, [e.target.id]: e.target.value}
+        updateGeneralInfo(updatedInfo)
+    }
     return (
         <div className='edit-general-container'>
             <div className="full-name-container general-div">
                 <div className="first-name-container">
                     <label htmlFor="firstName">First name*</label>
-                    <input type="text" id='firstName' placeholder='Frank' required />
+                    <input onChange={(e) => handleInputChange(e)} type="text" id='firstName' placeholder='Frank' required />
                 </div>
                 <div className="last-name-container">
                     <label htmlFor="lastName">Last name*</label>
