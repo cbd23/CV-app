@@ -1,11 +1,11 @@
 import './../styles/General.css'
 
-export function General() {
+export function General({ generalInfo }) {
     return (
         <div className='general-container'>
             <div className="general-upper">
-                <h1 className="general-name">Catalin Badila</h1>
-                <h3 className="general-position">Frontend Developer</h3>
+                <h1 className="general-name">{generalInfo.firstName}</h1>
+                <h3 className="general-position">{generalInfo.position}</h3>
             </div>
             <div className="general-lower">
                 <div className="general-bio">
