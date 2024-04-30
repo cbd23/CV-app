@@ -3,10 +3,10 @@ import { General } from './General'
 import { ProjectsSection } from './ProjectsSection'
 import { EducationSection } from './EducationSection'
 
-export function CV() {
+export function CV({generalInfo}) {
     return (
         <div className='cv'>
-            <General></General>
+            <General generalInfo={generalInfo}></General>
             <ProjectsSection></ProjectsSection>
             <EducationSection></EducationSection>
         </div>
