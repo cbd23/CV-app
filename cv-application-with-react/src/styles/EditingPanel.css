@@ -1,9 +1,11 @@
 .editing-panel {
-    border: 2px solid red;
-
-    width: 30%;
+    border-radius: 8px;
+    background-color: #90ee90;
+    width: 40%;
     height: 100vh;
     box-sizing: border-box;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     overflow: scroll;
 }
