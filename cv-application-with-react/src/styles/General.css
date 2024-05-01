@@ -48,3 +48,7 @@
     cursor: pointer;    
     color: #076bcf;
 }
+
+a:visited {
+    color: #076bcf;
+}
