@@ -1,0 +1,38 @@
+.edit-projects-container {
+    width: 340px;
+    background-color: #f6f7fc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px 0 gray;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.project-one-container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 12px 0;
+}
+
+.projects-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+}
+
+label {
+    padding-left: 2px;
+}
+
+input {
+    height: 1.4rem;
+    padding: 4px 8px;
+}
+
+h3, h2 {
+    margin: 0;
+}
