@@ -1,10 +1,9 @@
 body {
-  background-color: white;
+  background-color: #b0c4de;
+  margin: 4px;
 }
 
 .app-container {
-  border: 2px solid green;
-
   width: 100%;
   display: flex;
   justify-content: space-around;
