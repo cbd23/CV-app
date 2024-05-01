@@ -4,20 +4,20 @@ export function General({ generalInfo }) {
     return (
         <div className='general-container'>
             <div className="general-upper">
-                <h1 className="general-name">{generalInfo.firstName}</h1>
+                <h1 className="general-name">{generalInfo.firstName} {generalInfo.lastName}</h1>
                 <h3 className="general-position">{generalInfo.position}</h3>
             </div>
             <div className="general-lower">
                 <div className="general-bio">
-                Former copywriter with over 4 years of experience in the advertising industry. I&apos;m looking for opportunities to build successful projects, using my technical skills alongside everything I learned so far. Also actively working on extending my current stack by learning React, NodeJS, Express and MongoDB.
+                {generalInfo.bio}
                 </div>
                 <div className="general-contact">
-                    <div className="general-city">Bucharest</div>
-                    <div className="general-phone">0123 456 789</div>
-                    <div className="general-email">catalin@example.com</div>
+                    <div className="general-city">{generalInfo.city}</div>
+                    <div className="general-phone">{generalInfo.phone}</div>
+                    <div className="general-email">{generalInfo.email}</div>
                     <br />
-                    <div className="general-github-link"><u>GitHub</u></div>
-                    <div className="general-linkedin-link"><u>Linkedin</u></div>   
+                    {generalInfo.github !== '' && <div className="general-github-link"><u><a href={generalInfo.github} target='_blank'>Github</a></u></div>}
+                    {generalInfo.linkedin !== '' && <div className="general-linkedin-link"><u><a href={generalInfo.linkedin} target='_blank'>Linkedin</a></u></div>}   
                 </div>
             </div>
         </div>
