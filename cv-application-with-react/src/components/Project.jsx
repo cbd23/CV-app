@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 import './../styles/Project.css'
 
-export function Project({ title, projectLink = null, linkName = 'Link', description }) {
+export function Project({ projectsInfo, name, link, linkName = 'Live Demo', description }) {
 
-    const anchor = projectLink ? <a href={projectLink} target='_blank'>{linkName}</a> : null
+    const anchor = link ? <a href={link} target='_blank'>{linkName}</a> : null
 
     return (
         <div className="project-container">
-            <div className="project-name">{projectLink ? (<span>{title}, {anchor}</span>) : (<span>{title}</span>)}</div>
+            <div className="project-name">{link ? (<span>{projectsInfo[name]}, {anchor}</span>) : (<span>{projectsInfo[name]}</span>)}</div>
             <p className="project-description">{description}</p>
         </div>
     )
