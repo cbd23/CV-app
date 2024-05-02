@@ -10,7 +10,9 @@
     gap: 14px;
 }
 
-.project-one-container {
+.project-one-container,
+.project-two-container,
+.project-three-container {
     display: flex;
     flex-direction: column;
     gap: 14px;
