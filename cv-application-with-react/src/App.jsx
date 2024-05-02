@@ -16,15 +16,35 @@ function App() {
     bio: `Former copywriter with over 4 years of experience in the advertising industry. I'm looking for opportunities to build successful projects, using my technical skills alongside everything I learned so far. Also actively working on extending my current stack by learning React, NodeJS, Express and MongoDB.`
   })
 
+  const [projectsInfo, setProjectsInfo] = useState({
+    projectOneName: 'IMDb Clone App',
+    projectOneLink: 'https://cbd23.github.io/watchlist-app/',
+    projectOneDescription: 'My final project for graduating from the Web Development with JS course at the Informal School of IT. You can find the full description inside the README section of the GitHub repo.',
+
+    projectTwoName: 'Weather App',
+    projectTwoLink: 'https://cbd23.github.io/weather-app/',
+    projectTwoDescription: 'This project helped me to better understand promises in JS. Using the Fetch API, I challenged myself to refactor the code until it counts less than 100 lines of JS code.',
+
+    projectThreeName: 'ToDo List App',
+    projectThreeLink: 'https://cbd23.github.io/todo-list/',
+    projectThreeDescription: 'Gained more experience in bundling and optimizing web assets, using NPM and Webpack & learned new ways to deploy to GitHub Pages.'
+
+  })
+
   // Create a fn that will be called by onChange event handlers to update 'generalInfo'
   const updateGeneralInfo = (updatedInfo) => {
     setGeneralInfo(updatedInfo)
   }
 
+  // Same for updating 'projectsInfo'
+  const updateProjectsInfo = (updatedInfo) => {
+    setProjectsInfo(updatedInfo)
+  }
+
   return (
     <div className='app-container'>
-      <EditingPanel updateGeneralInfo={updateGeneralInfo} generalInfo={generalInfo}></EditingPanel>
-      <CV generalInfo={generalInfo}></CV>
+      <EditingPanel updateGeneralInfo={updateGeneralInfo} generalInfo={generalInfo} updateProjectsInfo={updateProjectsInfo} projectsInfo={projectsInfo}></EditingPanel>
+      <CV generalInfo={generalInfo} projectsInfo={projectsInfo}></CV>
     </div>
   )
 
