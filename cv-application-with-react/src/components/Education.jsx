@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 import './../styles/Education.css'
 
-export function Education({ school, studyField, startDate, endDate, place, description }) {
+export function Education({ educationInfo, schoolName, studyField, startDate, endDate, place, description }) {
     return (
         <div className="education">
             <div className="education-row-one">
-                <span className="school-name">{school}</span>
+                <span className="school-name">{educationInfo[schoolName]}</span>
                 &nbsp;&#8212;&nbsp;
                 <span className="study-field-name">{studyField}</span>
             </div>
