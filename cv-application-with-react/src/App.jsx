@@ -28,7 +28,32 @@ function App() {
     projectThreeName: 'ToDo List App',
     projectThreeLink: 'https://cbd23.github.io/todo-list/',
     projectThreeDescription: 'Gained more experience in bundling and optimizing web assets, using NPM and Webpack & learned new ways to deploy to GitHub Pages.'
+  })
 
+  const [educationInfo, setEducationInfo] = useState({
+    educationOneName: 'Informal School of IT',
+    educationOneStudyField: 'Web Development with JavaScript',
+    educationOneStartDate: 'OCT 2023',
+    educationOneIsFinised: true,
+    educationOneEndDate: 'FEB 2024',
+    educationOnePlace: 'BUCHAREST',
+    educationOneDescription: '',
+
+    educationTwoName: 'Informal School of IT',
+    educationTwoStudyField: 'Web Development with JavaScript',
+    educationTwoStartDate: '',
+    educationTwoIsFinised: true,
+    educationTwoEndDate: '',
+    educationTwoPlace: '',
+    educationTwoDescription: '',
+
+    educationThreeName: 'Informal School of IT',
+    educationThreeStudyField: 'Web Development with JavaScript',
+    educationThreeStartDate: '',
+    educationThreeIsFinised: true,
+    educationThreeEndDate: '',
+    educationThreePlace: '',
+    educationThreeDescription: ''
   })
 
   // Create a fn that will be called by onChange event handlers to update 'generalInfo'
@@ -41,10 +66,15 @@ function App() {
     setProjectsInfo(updatedInfo)
   }
 
+  // Same for updating 'projectsInfo'
+  const updateEducationInfo = (updatedInfo) => {
+    setEducationInfo(updatedInfo)
+  }
+
   return (
     <div className='app-container'>
-      <EditingPanel updateGeneralInfo={updateGeneralInfo} generalInfo={generalInfo} updateProjectsInfo={updateProjectsInfo} projectsInfo={projectsInfo}></EditingPanel>
-      <CV generalInfo={generalInfo} projectsInfo={projectsInfo}></CV>
+      <EditingPanel updateGeneralInfo={updateGeneralInfo} generalInfo={generalInfo} updateProjectsInfo={updateProjectsInfo} projectsInfo={projectsInfo} updateEducationInfo={updateEducationInfo} educationInfo={educationInfo}></EditingPanel>
+      <CV generalInfo={generalInfo} projectsInfo={projectsInfo} educationInfo={educationInfo}></CV>
     </div>
   )
 
