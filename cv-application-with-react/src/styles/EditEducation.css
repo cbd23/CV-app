@@ -1,0 +1,57 @@
+.edit-education-container {
+    width: 340px;
+    background-color: #f6f7fc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px 0 gray;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.education-one-container,
+.project-two-container,
+.project-three-container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 12px 0;
+}
+
+.education-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+}
+
+.still-attending {
+    border: 2px solid red;
+    margin: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+}
+
+label {
+    padding-left: 2px;
+}
+
+input {
+    height: 1.4rem;
+    padding: 4px 8px;
+}
+
+input[type='checkbox'] {
+    width: 18px;
+}
+
+input[type='month'] {
+    margin: 8px;
+}
+
+h3, h2 {
+    margin: 0;
+}
