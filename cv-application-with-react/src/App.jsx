@@ -34,26 +34,16 @@ function App() {
     educationOneName: 'Informal School of IT',
     educationOneStudyField: 'Web Development with JavaScript',
     educationOneStartDate: 'OCT 2023',
-    educationOneIsFinished: true,
     educationOneEndDate: 'FEB 2024',
     educationOnePlace: 'BUCHAREST',
     educationOneDescription: '',
 
-    educationTwoName: 'Informal School of IT',
-    educationTwoStudyField: 'Web Development with JavaScript',
-    educationTwoStartDate: '',
-    educationTwoIsFinished: true,
-    educationTwoEndDate: '',
-    educationTwoPlace: '',
-    educationTwoDescription: '',
-
-    educationThreeName: 'Informal School of IT',
-    educationThreeStudyField: 'Web Development with JavaScript',
-    educationThreeStartDate: '',
-    educationThreeIsFinished: true,
-    educationThreeEndDate: '',
-    educationThreePlace: '',
-    educationThreeDescription: ''
+    educationTwoName: 'The Odin Project',
+    educationTwoStudyField: 'Full Stack Curriculum (JavaScript Path)',
+    educationTwoStartDate: 'JAN 2023',
+    educationTwoEndDate: 'JUN 2024',
+    educationTwoPlace: 'ONLINE',
+    educationTwoDescription: 'Currently learning React, so I can take my frontend skills to a new level.'
   })
 
   // Create a fn that will be called by onChange event handlers to update 'generalInfo'
