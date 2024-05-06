@@ -59,10 +59,6 @@ export function EditEducation({ updateEducationInfo, educationInfo }) {
                         <label htmlFor="educationOneStartDate">Start date</label>
                         <input onChange={(e) => handleDateChange(e)} type='month' id='educationOneStartDate' defaultValue='2023-10' />
                     </div>
-                    <div className="still-attending">
-                        <input type="checkbox" id='stillAttending' />
-                        <label htmlFor="stillAttending">Still attending this school</label>
-                    </div>
                     <div className="end-date">
                         <label htmlFor="educationOneEndDate">End date</label>
                         <input onChange={(e) => handleDateChange(e)} type='month' id='educationOneEndDate' defaultValue='2024-02' />
