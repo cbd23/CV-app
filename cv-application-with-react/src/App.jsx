@@ -66,7 +66,7 @@ function App() {
     setProjectsInfo(updatedInfo)
   }
 
-  // Same for updating 'projectsInfo'
+  // Same for updating 'educationInfo'
   const updateEducationInfo = (updatedInfo) => {
     setEducationInfo(updatedInfo)
   }
