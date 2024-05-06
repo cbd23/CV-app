@@ -73,6 +73,35 @@ export function EditEducation({ updateEducationInfo, educationInfo }) {
                     <textarea onChange={(e) => handleInputChange(e)} id='educationOneDescription' maxLength='200' placeholder='Tell something about what you learned. Did you build a final project? ' />
                 </div>
             </div>
+            <div className="education-two-container">
+                <h3>Second education</h3>
+                <div className="education-two-name education-div">
+                    <label htmlFor="educationOneName">School</label>
+                    <input onChange={(e) => handleInputChange(e)} type="text" id='educationTwoName' maxLength='30' placeholder='The Odin Project' />
+                </div>
+                <div className="education-two-study-field education-div">
+                    <label htmlFor="educationTwoStudyField">Study field</label>
+                    <input onChange={(e) => handleInputChange(e)} type="text" id='educationTwoStudyField' placeholder='Full Stack Curriculum (JavaScript Path)' />
+                </div>
+                <div className="education-two-period education-div">
+                    <div className="start-date">
+                        <label htmlFor="educationTwoStartDate">Start date</label>
+                        <input onChange={(e) => handleDateChange(e)} type='month' id='educationTwoStartDate' defaultValue='2023-01' />
+                    </div>
+                    <div className="end-date">
+                        <label htmlFor="educationTwoEndDate">End date</label>
+                        <input onChange={(e) => handleDateChange(e)} type='month' id='educationTwoEndDate' defaultValue='2024-06' />
+                    </div>
+                </div>
+                <div className="education-two-place education-div">
+                    <label htmlFor="educationTwoPlace">Location</label>
+                    <input onChange={(e) => handleInputChange(e)} type="text" id='educationTwoPlace' placeholder='ONLINE' />
+                </div>
+                <div className="education-two-description education-div">
+                    <label htmlFor="educationTwoDescription">Description</label>
+                    <textarea onChange={(e) => handleInputChange(e)} id='educationTwoDescription' maxLength='200' placeholder='Tell something about what you learned. Did you build a final project? ' />
+                </div>
+            </div>
         </div>
     )
 }
