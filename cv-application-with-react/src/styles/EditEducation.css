@@ -11,8 +11,7 @@
 }
 
 .education-one-container,
-.project-two-container,
-.project-three-container {
+.education-two-container {
     display: flex;
     flex-direction: column;
     gap: 14px;
