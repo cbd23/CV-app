@@ -13,6 +13,14 @@ export function EducationSection({ educationInfo }) {
                 place={educationInfo.educationOnePlace}
                 description={educationInfo.educationOneDescription}>
             </Education>
+            <Education educationInfo={educationInfo}
+                schoolName='educationTwoName' 
+                studyField={educationInfo.educationTwoStudyField}
+                startDate={educationInfo.educationTwoStartDate}
+                endDate={educationInfo.educationTwoEndDate}
+                place={educationInfo.educationTwoPlace}
+                description={educationInfo.educationTwoDescription}>
+            </Education>
         </div>
     )
 }
