@@ -2,7 +2,7 @@
 
 <div id="top"></div>
   
-## IMDb Clone App
+## CV Builder App
 
 <a href="https://cv-app-flax.vercel.app/" target="_blank">🕹 Live Demo here</a>
 
