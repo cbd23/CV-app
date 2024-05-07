@@ -6,9 +6,21 @@ export function Project({ projectsInfo, name, link, linkName = 'Live Demo', desc
     const anchor = link ? <a href={link} target='_blank'>{linkName}</a> : null
 
     return (
-        <div className="project-container">
-            <div className="project-name">{link ? (<span>{projectsInfo[name]}, {anchor}</span>) : (<span>{projectsInfo[name]}</span>)}</div>
+      <div className="project-container">
+        {projectsInfo[name] !== "" && (
+          <>
+            <div className="project-name">
+              {link ? (
+                <span>
+                  {projectsInfo[name]}, {anchor}
+                </span>
+              ) : (
+                <span>{projectsInfo[name]}</span>
+              )}
+            </div>
             <p className="project-description">{description}</p>
-        </div>
-    )
+          </>
+        )}
+      </div>
+    );
 }
